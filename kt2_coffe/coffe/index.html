@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Blog</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+<h1>Coffee Blog</h1>
+
+
+<form id="coffeeForm">
+    <label for="coffee_name">Название напитка</label><br>
+    <input type="text" id="coffee_name" name="coffee_name" placeholder="Латте" required><br>
+    
+    <label for="coffee_sort">Сорт кофе</label><br>
+    <select name="coffee_sort" id="coffee_sort">
+        <option>Либерика</option>
+        <option>Арабика</option>
+    </select><br>
+    
+    <label>Крепкость обжарки</label><br>
+    <input type="radio" name="coffee_roasting" value="Крепкая" required>Крепкая<br>
+    <input type="radio" name="coffee_roasting" value="Средняя">Средняя<br>
+    <input type="radio" name="coffee_roasting" value="Легкая">Легкая<br>
+    
+    <label for="coffee_img">Изображение</label><br>
+    <input type="text" id="coffee_img" name="coffee_img" placeholder="https://site.com/img.png"><br>
+    
+    <label for="coffee_price">Стоимость напитка</label><br>
+    <input type="text" id="coffee_price" name="coffee_price" placeholder="185" required><br>
+    
+    <label for="coffee_description">Описание</label><br>
+    <textarea name="coffee_description" id="coffee_description">про напиток</textarea><br>
+    
+    <input type="submit" value="Добавить напиток"><br>
+
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Сорт</th>
+            <th>Крепкость</th>
+            <th>Изображение</th>
+            <th>Цена</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody id="coffeeTableBody">
+    </tbody>
+</table>
+
+
+<script src="script.js"></script>
+</body>
+</html>
